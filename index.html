@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title of the document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="banner w-100 flex">
+            <div class="banner-title h-100 flex-center">
+                Cryptocurrency: What it is and how it works
+            </div>
+            <div class="banner-img h-100">
+
+            </div>
+        </div>
+        <div class="main-content h-100 flex">
+            <div class="circuit-1 absolute" id="circuit-1">
+                <img src="circuit.svg" alt="" height="450" width="450">
+            </div>
+            <div class="circuit-2 fixed" id="circuit-2">
+                <img src="circuit3.svg" alt="" height="350" width="350">
+            </div>
+            <script>
+                const circuit = document.getElementById('circuit-1');
+                const fixedOffsetCirc = 250;
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > fixedOffsetCirc) {
+                        circuit.classList.remove('absolute');
+                        circuit.classList.add('fixed');
+                        circuit.style.left = "0px";
+                        circuit.style.top = "0px";
+                    } else {
+                        circuit.classList.remove('fixed');
+                        circuit.classList.add('absolute');
+                        circuit.style.left = "0px";
+                        circuit.style.top = "0px";
+                    }
+                });
+            </script>
+            <div class="text-content relative">
+                <div class="content-window flex-col gap-20" id="content-window">
+                    <div class="content-section" id="intro">
+                        <h1>
+                            Introduction to Cryptocurrency
+                        </h1>
+                        <br>
+                        <p>
+                            Cryptocurrency is a form of digital money that operates on blockchain technology. Unlike traditional currencies like euros or dollars, cryptocurrency has no physical form and is not controlled by banks or governments.                  
+                        </p>
+                        <ul>
+                            <li><b>Decentralization:</b> No central authority manages the currency</li>
+                            <br>
+                            <li><b>Security:</b> Cryptographic techniques make transactions secure</li>
+                            <br>
+                            <li><b>Transparency:</b> All transactions are recorded in a public blockchain network</li>
+                            <br>
+                            <li><b>Convenience:</b> Transactions can be fast and borderless</li>
+                        </ul> 
+                    </div>
+                    <img src="whatis.jpeg" alt="">
+                    <br>
+                    <br>
+                    <div class="content-section howitworks" id="howitworks">
+                        <h1>
+                            How Cryptocurrency Works
+                        </h1>
+                        <br>
+                        <p>
+                            Cryptocurrency is based on blockchain technology — a distributed database that stores information about all transactions. The main feature of blockchain is its decentralization: data is not stored on a single server but is distributed across thousands of computers (nodes) worldwide.                  
+                        </p>
+                        <br>
+                        <h3>Key elements of cryptocurrency operation:</h3>
+                        <br>
+                        <ol>
+                            <li>
+                                <strong>Blocks and chains:</strong>
+                                <br><br>
+                                <p>Each block contains data about several transactions, a unique code (hash), and a reference to the previous block. This creates a chain that cannot be altered without consensus from the entire network.</p>
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Consensus mechanisms:</strong>
+                                <br>
+                                <br>
+                                <p>These are essential for verifying the authenticity of transactions:</p>
+                                <ul>
+                                    <li><strong>Proof of Work:</strong> Used in Bitcoin, this mechanism requires computers to solve complex problems to confirm transactions.</li>
+                                    <br>
+                                    <li><strong>Proof of Stake:</strong> Used in Ethereum 2.0, it allows participants to validate transactions based on the number of coins they hold in the network.</li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Cryptographic protection:</strong>
+                                <br>
+                                <br>
+                                <p>Each transaction is secured by advanced mathematical algorithms, making it nearly impossible to forge or alter data.</p>
+                            </li>
+                        </ol>
+                        <br>
+                        <p>
+                            These elements ensure cryptocurrency's security, transparency, and reliability, even without a central governing body.
+                        </p>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="content-section examples" id="examples">
+                        <h1>
+                            Examples of Popular Cryptocurrencies
+                        </h1>
+                        <br>
+                        <p>
+                            There are many cryptocurrencies, each with unique features and goals. Here are some of the most popular:                  
+                        </p>
+                        <br>
+                        <img src="cryptos.svg" alt="" class="w-100"> 
+                        <br>
+                        <br>
+                        <ol>
+                            <li>
+                                <strong>Bitcoin (BTC):</strong>
+                                <br>
+                                <br>
+                                <p>Bitcoin is the first cryptocurrency, created in 2009 by an anonymous developer or group known as Satoshi Nakamoto. Its goal is to become a decentralized alternative to traditional money. Bitcoin is often referred to as "digital gold" due to its limited supply.</p>
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Ethereum (ETH):</strong>
+                                <br>
+                                <br>
+                                <p>Ethereum, launched in 2015, differs from Bitcoin by offering additional functionality. It is not only a cryptocurrency but also a platform for creating decentralized applications and smart contracts.</p>
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Ripple (XRP):</strong>
+                                <br>
+                                <br>
+                                <p>Ripple focuses on the banking sector, helping to speed up and reduce the cost of international payments. Many major banks already use Ripple in their systems.</p>
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Stablecoins:</strong>
+                                <br>
+                                <br>
+                                <p>Cryptocurrencies like USDT and USDC maintain price stability by being pegged to real assets, such as the US dollar. They are popular among users seeking to avoid volatility.</p>
+                            </li>
+                        </ol>
+                    </div> 
+                    <br>
+                    <br>
+                    <div class="content-section" id="whyimp">
+                        <h1>
+                            Why Cryptocurrency is Important
+                        </h1>
+                        <br>
+                        <b>Decentralization and independence</b>
+                        <br>
+                        <br>
+                        <p>
+                            Traditional financial systems rely on central banks and intermediaries. Cryptocurrency eliminates the need for intermediaries, enabling users to manage their finances independently.
+                        </p>
+                        <br>
+                        <br>
+                        <b>Financial accessibility</b>
+                        <br>
+                        <br>
+                        <p>In countries with unstable economies, cryptocurrency provides access to global financial systems, especially in regions where traditional banks are inaccessible.</p>
+                        <br>
+                        <br>
+                        <b>
+                            Transparency and trust
+                        </b>
+                        <br>
+                        <br>
+                        <p>Blockchain makes all transactions transparent. This helps combat corruption and increases trust among system participants.</p>
+                        <br>
+                        <br>
+                        <b>Protection against inflation</b>
+                        <br>
+                        <br>
+                        <p>Cryptocurrencies like Bitcoin have a limited supply, making them resistant to inflation and attractive as a store of value.</p>
+                        <br>
+                        <br>
+                        <b>Innovations and new technologies</b>
+                        <br>
+                        <br>
+                        <p>Cryptocurrencies drive the development of blockchain platforms, decentralized finance (DeFi), and Web3, creating new business models and technologies.</p>
+                        <br>
+                    </div> 
+                    <br>
+                    <br>
+                    <div class="content-section howtostart" id="howtostart">
+                        <h1>
+                            How to Start Using Cryptocurrency
+                        </h1>
+                        <br>
+                        <b>Getting started with cryptocurrency is easier than it seems. Here’s a step-by-step guide:</b>
+                        <br>
+                        <br>
+                        <img src="howtostart.png" alt="" class="w-100">
+                        <br>
+                        <br>
+                        <ol>
+                            <li>
+                                <strong>Choose a crypto wallet:</strong>
+                                <br>
+                                <br>
+                                <p>To store cryptocurrency, you’ll need a wallet. There are two main types:</p>
+                                <ul>
+                                    <li><strong>Hot wallets:</strong> Apps or online services like MetaMask or Trust Wallet. They’re convenient but require constant internet access.</li>
+                                    <br>
+                                    <li><strong>Cold wallets:</strong> Hardware devices or offline solutions that offer maximum security.</li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Register on a cryptocurrency exchange:</strong>
+                                <br><br>
+                                <p>Platforms like Binance, Coinbase, or Kraken allow you to buy and sell cryptocurrency. Registration usually takes just a few minutes.</p>
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Buy cryptocurrency:</strong>
+                                <br><br>
+                                <p>Fund your account on the exchange and choose the cryptocurrency you’re interested in. Start with a small amount to understand how it works.</p>
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Secure your assets:</strong>
+                                <br><br>
+                                <p>Never share your private keys with third parties. Use strong passwords and enable two-factor authentication.</p>
+                            </li>
+                        </ol>
+                    </div> 
+                    <br>
+                    <br>
+                    <div class="content-section illegal" id="illegal">
+                        <h1>
+                            The Illegality of Cryptocurrency
+                        </h1>
+                        <br>
+                        <p>Cryptocurrency is an innovative technology, but its legal status varies significantly across countries. In some regions, cryptocurrencies are banned or heavily regulated due to their decentralized nature and potential risks.</p>
+                        <br>
+                        <br>
+                        <b>Why is cryptocurrency considered illegal?</b>
+                        <br>
+                        <br>
+                        <ol>
+                            <li>
+                                <strong>Anonymity and criminal activity:</strong>
+                                <br><br>
+                                <p>Cryptocurrencies like Bitcoin provide a high level of privacy, making them attractive for illegal operations such as trading banned goods, tax evasion, or money laundering.</p>
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Lack of control:</strong>
+                                <br><br>
+                                <p>Unlike fiat currencies, cryptocurrencies are not regulated by central banks, raising concerns about destabilizing traditional financial systems.</p>
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Threat to national currencies:</strong>
+                                <br><br>
+                                <p>Some countries see cryptocurrencies as a threat to their economic stability, as they could replace national currencies or bypass state financial systems.</p>
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Technological complexity:</strong>
+                                <br><br>
+                                <p>Blockchain technology can be challenging to understand and regulate, making it difficult for governments to control cryptocurrency usage.</p>
+                            </li>
+                        </ol>
+                        <br>
+                        <br>
+                        <b>Examples of countries with restrictions or bans</b>
+                        <br>
+                        <ul>
+                            <li>
+                                <strong>China:</strong> Completely banned cryptocurrency operations, including mining, citing threats to financial stability.
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Algeria and Morocco:</strong> Any use or exchange of cryptocurrencies is strictly prohibited.
+                            </li>
+                            <br>
+                            <li>
+                                <strong>India (previously):</strong> Cryptocurrencies were partially banned in 2020 but later restrictions were eased.
+                            </li>
+                        </ul>
+                        <br>
+                        <br>
+                        <b>How do governments combat illegality?</b>
+                        <br>
+                        <br>
+                        <ol>
+                            <li>
+                                <strong>Regulation and taxation:</strong>
+                                <br><br>
+                                <p>Some countries impose strict rules and taxes on cryptocurrency users to prevent illegal use.</p>
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Creating digital currencies (CBDC):</strong>
+                                <br><br>
+                                <p>Governments are developing their own digital currencies to offer alternatives to cryptocurrencies.</p>
+                            </li>
+                        </ol>
+                    </div> 
+                    <br>
+                    <br>
+                    <div class="content-section future" id="future">
+                        <h1>The Future of Cryptocurrency</h1>
+                        <br>
+                        <p>Cryptocurrency is becoming an integral part of the global economy, and its potential is only beginning to unfold</p>
+                        <br>
+                        <br>
+                        <ol>
+                            <li>
+                                <strong>Expansion of use cases:</strong>
+                                <br><br>
+                                <p>More companies are accepting cryptocurrency as a payment method. For example, Tesla, Microsoft, and Starbucks already work with cryptocurrencies.</p>
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Decentralized finance (DeFi):</strong>
+                                <br><br>
+                                <p>New financial platforms allow users to lend, invest, and trade without banks.</p>
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Central Bank Digital Currencies (CBDCs):</strong>
+                                <br><br>
+                                <p>Many countries are developing their own digital currencies to compete with private cryptocurrencies.</p>
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Web3 and decentralization:</strong>
+                                <br><br>
+                                <p>The future of the internet is being built on decentralized platforms, where users control their data and interactions.</p>
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Resilience to challenges:</strong>
+                                <br><br>
+                                <p>Despite regulations and volatility, cryptocurrency continues to evolve, finding new applications.</p>
+                            </li>
+                        </ol>
+                    </div>          
+                </div>
+            </div>
+            <div class="content" id="content">
+                <h3>Content</h3>
+                <ul>
+                    <a href="#intro"><li theLittleDetails="Let's start">Introduction to Cryptocurrency</li></a>
+                    <a href="#howitworks"><li theLittleDetails="How it works?">How Cryptocurrency Works</li></a>
+                    <a href="#examples"><li theLittleDetails="Discover the giants in the market">Examples of Popular Cryptocurrencies</li></a>
+                    <a href="#whyimp"><li theLittleDetails="It’s more than just digital money">Why Cryptocurrency is Important</li></a>
+                    <a href="#howtostart"><li theLittleDetails="Follow the first steps">How to Start Using Cryptocurrency</li></a>
+                    <a href="#illegal"><li theLittleDetails="Know the risks before diving in">The Illegality of Cryptocurrency</li></a>
+                    <a href="#future"><li theLittleDetails="The possibilities are endless">The Future of Cryptocurrency</li></a>
+                </ul>
+            </div>
+            <div id="shadow-content" class="display-none">
+
+            </div>
+            <script>
+                const header = document.getElementById('content');
+                const fixedOffset = 210;
+                const shadowContent = document.getElementById('shadow-content');
+
+
+                // window.addEventListener('scroll', () => {
+                //     if (window.scrollY > fixedOffset) {
+                //         const rect = header.getBoundingClientRect();
+                //         console.log(rect.top);
+                //         console.log(rect.left);
+
+                //         const textContentWidth = document.getElementById('content-window').offsetWidth;
+                //         header.classList.add('fixed');
+                //         shadowContent.classList.remove('display-none');
+
+                //         header.style.left = rect.left.toString() + "px";
+                //         header.style.top = "60px";
+                //     } else {
+                //         header.classList.remove('fixed');
+                //         shadowContent.classList.add('display-none');
+                //         header.style.left = "0px";
+                //         header.style.top = "0px";
+                //     }
+                // });
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>

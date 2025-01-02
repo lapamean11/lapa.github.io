@@ -1,0 +1,322 @@
+@font-face {
+    font-family: 'Tekur';
+    src: url('fonts/Tektur.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Mono';
+    src: url('fonts/MartianMono_Thin.ttf') format('truetype');
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Tekur', sans-serif;
+}
+
+h1 {
+    color: #D2A34C;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mono', sans-serif;
+}
+
+body {
+    background-color: #242438;
+    padding-bottom: 30px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-align-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.gap-5 {
+    gap: 5px;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-15 {
+    gap: 15px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.gap-25 {
+    gap: 25px;
+}
+
+.gap-30 {
+    gap: 30px;
+}
+
+button {
+    cursor: pointer;
+} 
+
+.display-none {
+    display: none;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.absolute-right-center {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.banner {
+    color: white;
+    // background-image: linear-gradient(to right, #153567 70%, #D2A34C 30%);
+    //background-image: linear-gradient(to right, #0f0c29, #302b63, #D2A34C);
+    // background: rgb(2,0,36);
+    // background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 73%, rgba(129,109,19,1) 100%);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,12,41,1) 73%, rgba(129,109,19,1) 125%);
+    // background: rgb(2,0,36);
+    // background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,12,41,1) 70%, rgba(217,154,43,1) 100%);
+    // background: rgb(2,0,36);
+    // background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,12,41,1) 70%, rgba(217,154,43,0.6615021008403361) 100%);
+    white-space: pre;
+    padding-left: 250px;
+    padding-right: 250px;
+    height: 250px;
+    background-color: bisque;
+
+    @media (max-width: 750px) {
+        padding-left: 30px;
+        padding-right: 30px;
+        white-space: initial;
+    }
+}
+
+.banner-title {
+    width: 50%;
+    font-size: 40px;
+    font-family: 'Tekur', sans-serif;
+
+    @media (max-width: 960px) {
+        font-size: 35px;
+    }
+
+    @media (max-width: 790px) {
+        font-size: 30px;
+    }
+
+    @media (max-width: 750px) {
+        width: 100%;
+    }
+}
+
+.circuit-1 {
+    left: 0;
+}
+
+.circuit-2 {
+    right: 0;
+    bottom: 0;
+}
+
+.main-content {
+    // padding-left: 250px;
+    // padding-right: 250px;
+    position: relative;
+    color: white;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+
+    @media (max-width: 1300px) {
+        gap: 35px;
+    }
+
+    @media (max-width: 1100px) {
+        gap: 25px;
+    }
+
+    .text-content {
+        width: 900px;
+
+        @media (max-width: 1300px) {
+            width: 700px;
+        }
+
+        @media (max-width: 1100px) {
+            width: 600px;
+
+            font-size: 14px;
+        }
+
+        @media (max-width: 900px) {
+            width: 90%;
+        }
+
+        .content-window {
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: -40px;
+            background-color: #32324d;
+
+            ul {
+                margin-top: 20px;
+                margin-left: 20px;
+            }
+        }
+    }
+
+    #shadow-content {
+        width: 300px;
+    }
+
+    .content {
+        padding: 15px;
+        border-radius: 10px;
+        width: 300px;
+        background-color: #32324d;
+        margin-top: -40px;
+        position: sticky;
+        top: 20px;
+
+        @media (max-width: 1100px) {
+            width: 200px;
+
+            li {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            display: none;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        ul {
+            padding-inline-start: 1.5em;
+            font-weight: 400;
+
+            @media (max-width: 1100px) {
+                padding-inline-start: 0.5em;
+            }
+        
+            ::marker {
+                content: ">";
+                color: #48b;
+            }
+        
+            ul ::marker {
+                content: ">>";
+            }
+        }
+        
+        li {
+            position: relative;
+            padding-inline-start: 0.5em;
+            padding-top: 1.5em;
+            // border-bottom: 1px solid #48b2;
+            cursor: pointer;
+            transition: color 0.4s;
+        
+            &::after {
+                content: attr(theLittleDetails);
+                position: absolute;
+                left: 15%; bottom: calc(100% - 1.5em);
+                background-image: conic-gradient(from 10deg at 1em 100%, #fff 30deg, #fff0 30deg),
+                    linear-gradient(0deg, #fff0 1.5em, #fff 1.5em);
+                color: #246;
+                font-weight: 700;
+                padding: 1em 2em 2.5em;
+                pointer-events: none;
+                opacity: 0;
+                filter: drop-shadow(1px 2px 4px #0003);
+                transition: opacity 0.4s;
+            }
+        
+            &:hover {
+                color: #D2A34C;
+                
+                &::marker {
+                    font-weight: 700;
+                }
+                &::after {
+                    opacity: 1;
+                    transition-delay: 0.2s;
+                }
+            }
+        }
+    }
+
+    .howitworks, .examples, .howtostart, .illegal, .future {
+        ol {
+            margin-left: 40px;
+        }
+        ul {
+            margin-left: 60px;
+        }
+    }
+}
